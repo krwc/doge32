@@ -52,6 +52,10 @@ out/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+### KiCad custom ###
+*-cache.lib
+fp-info-cache/
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
