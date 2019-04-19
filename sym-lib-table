@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name tsm2323cx)(type Legacy)(uri ${KIPRJMOD}/library/tsm2323cx.lib)(options "")(descr ""))
+)
