@@ -663,17 +663,6 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX603-MAX604.pdf" H 5650 1100 
 	1    5650 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L tsm2323cx:TSM2323CX Q1
-U 1 1 5CBA9B71
-P 4200 1600
-F 0 "Q1" H 4406 1554 50  0000 L CNN
-F 1 "TSM2323CX" H 4406 1645 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 1525 50  0001 L CNN
-F 3 "https://www.taiwansemi.com/products/datasheet/TSM2323_F15.pdf" H 4200 1600 50  0001 C CNN
-	1    4200 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3850 700  3900 700 
 Wire Wire Line
@@ -1036,36 +1025,6 @@ Wire Wire Line
 	3750 6150 3750 6250
 Wire Wire Line
 	3250 6150 3450 6150
-Text GLabel 4400 5950 2    50   Output ~ 0
-ESP_IO0
-Wire Wire Line
-	4300 5950 4300 5850
-Wire Wire Line
-	4300 5250 4300 5300
-Wire Wire Line
-	4300 5300 3600 5300
-Wire Wire Line
-	3600 5300 3600 5650
-Connection ~ 3600 5650
-Wire Wire Line
-	4300 5450 4300 5400
-Wire Wire Line
-	4300 5400 3650 5400
-Wire Wire Line
-	3650 5400 3650 5050
-Wire Wire Line
-	4300 4600 4300 4850
-Wire Wire Line
-	4300 5950 4400 5950
-Wire Wire Line
-	2650 5650 3600 5650
-Connection ~ 3650 5050
-Wire Wire Line
-	2650 5050 3650 5050
-Text GLabel 4400 4600 2    50   Output ~ 0
-ESP_EN
-Wire Wire Line
-	4300 4600 4400 4600
 Wire Notes Line
 	5100 3850 550  3850
 Text Notes 4150 4100 0    50   ~ 0
@@ -1085,8 +1044,6 @@ Wire Notes Line
 	550  3850 550  7050
 Wire Notes Line
 	550  7050 5100 7050
-Wire Notes Line
-	5100 7050 5100 3850
 Wire Wire Line
 	4800 2050 4600 2050
 Connection ~ 4600 2050
@@ -1176,30 +1133,65 @@ Connection ~ 1800 3200
 Connection ~ 9150 3450
 Wire Wire Line
 	9150 3450 10450 3450
+Text GLabel 4300 5300 2    50   Output ~ 0
+ESP_IO0
+Wire Wire Line
+	3900 4600 4000 4600
+Text GLabel 4000 4600 2    50   Output ~ 0
+ESP_EN
+Wire Wire Line
+	3900 4600 3900 4850
+Wire Notes Line
+	5100 7050 5100 3850
+$Comp
+L tsm2323cx:TSM2323CX Q1
+U 1 1 5CBA9B71
+P 4200 1600
+F 0 "Q1" H 4406 1554 50  0000 L CNN
+F 1 "TSM2323CX" H 4406 1645 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 1525 50  0001 L CNN
+F 3 "https://www.taiwansemi.com/products/datasheet/TSM2323_F15.pdf" H 4200 1600 50  0001 C CNN
+	1    4200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5050 3600 5050
 $Comp
 L Transistor_FET:BSS138 Q3
-U 1 1 5CDA86B2
-P 4200 5050
-F 0 "Q3" H 4406 5096 50  0000 L CNN
-F 1 "BSS138Q-7-F" H 4406 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 4975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4200 5050 50  0001 L CNN
-	1    4200 5050
+U 1 1 5CE884E4
+P 3800 5050
+F 0 "Q3" H 4006 5096 50  0000 L CNN
+F 1 "BSS138Q-7-F" H 4006 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 4975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3800 5050 50  0001 L CNN
+	1    3800 5050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2650 5650 3900 5650
 $Comp
 L Transistor_FET:BSS138 Q4
-U 1 1 5CDAB614
-P 4200 5650
-F 0 "Q4" H 4406 5696 50  0000 L CNN
-F 1 "BSS138Q-7-F" H 4406 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 5575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4200 5650 50  0001 L CNN
-	1    4200 5650
+U 1 1 5CE9597E
+P 4100 5650
+F 0 "Q4" H 4306 5696 50  0000 L CNN
+F 1 "BSS138Q-7-F" H 4306 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4300 5575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4100 5650 50  0001 L CNN
+	1    4100 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 5050 4000 5050
+	3900 5250 3900 5650
+Connection ~ 3900 5650
 Wire Wire Line
-	3600 5650 4000 5650
+	4200 5850 4200 5950
+Wire Wire Line
+	4200 5950 3600 5950
+Wire Wire Line
+	3600 5950 3600 5050
+Connection ~ 3600 5050
+Wire Wire Line
+	4200 5450 4200 5300
+Wire Wire Line
+	4200 5300 4300 5300
 $EndSCHEMATC
