@@ -421,17 +421,6 @@ F 3 "~" H 10650 3250 50  0001 C CNN
 	1    10650 3250
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector:Conn_01x15_Male J1
-U 1 1 5D089E9B
-P 10650 1750
-F 0 "J1" V 10500 1800 50  0000 R CNN
-F 1 "Conn_01x15_Male" V 10600 2050 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10650 1750 50  0001 C CNN
-F 3 "~" H 10650 1750 50  0001 C CNN
-	1    10650 1750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	10350 1050 10450 1050
 Wire Wire Line
@@ -481,9 +470,9 @@ Wire Wire Line
 	10450 3950 10350 3950
 Wire Wire Line
 	10000 3850 10450 3850
-Text GLabel 10350 1350 0    50   Output ~ 0
+Text GLabel 10350 1450 0    50   Output ~ 0
 ESP_SENSOR_VN
-Text GLabel 10350 1250 0    50   Output ~ 0
+Text GLabel 10350 1350 0    50   Output ~ 0
 ESP_SENSOR_VP
 $Comp
 L power:GND #PWR0108
@@ -694,21 +683,11 @@ Wire Wire Line
 Wire Wire Line
 	9500 1750 10450 1750
 Wire Wire Line
-	9600 1150 9600 1450
-Wire Wire Line
 	10450 1450 10350 1450
-Connection ~ 9600 1450
-Wire Wire Line
-	9600 1450 9600 1550
 Wire Wire Line
 	10450 1550 10350 1550
 Wire Wire Line
-	10350 1550 10350 1450
-Wire Wire Line
 	10450 1650 10350 1650
-Wire Wire Line
-	10350 1650 10350 1550
-Connection ~ 10350 1550
 Text GLabel 5200 4100 2    50   Output ~ 0
 ESP_EN
 Wire Wire Line
@@ -718,9 +697,6 @@ ESP_EN
 Wire Wire Line
 	7550 1450 7450 1450
 Connection ~ 7550 1450
-Wire Wire Line
-	9600 1450 10350 1450
-Connection ~ 10350 1450
 Wire Notes Line
 	5900 3350 1350 3350
 Text Notes 4950 3600 0    50   ~ 0
@@ -1183,4 +1159,37 @@ F 3 "~" H 10300 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10450 1150 10300 1150
+$Comp
+L Connector:Conn_01x15_Male J1
+U 1 1 5D089E9B
+P 10650 1750
+F 0 "J1" V 10500 1800 50  0000 R CNN
+F 1 "Conn_01x15_Male" V 10600 2050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10650 1750 50  0001 C CNN
+F 3 "~" H 10650 1750 50  0001 C CNN
+	1    10650 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1150 9600 1550
+Text GLabel 10350 1250 0    50   BiDi ~ 0
+ESP_EN
+Wire Wire Line
+	10350 1550 10350 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5CBEB97E
+P 10300 1600
+F 0 "#PWR?" H 10300 1350 50  0001 C CNN
+F 1 "GND" H 10300 1450 50  0001 C CNN
+F 2 "" H 10300 1600 50  0001 C CNN
+F 3 "~" H 10300 1600 50  0001 C CNN
+	1    10300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10350 1600 10300 1600
+Connection ~ 10350 1600
+Wire Wire Line
+	10350 1600 10350 1650
 $EndSCHEMATC
