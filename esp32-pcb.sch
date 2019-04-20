@@ -432,8 +432,6 @@ F 3 "~" H 10650 1750 50  0001 C CNN
 	1    10650 1750
 	-1   0    0    -1  
 $EndComp
-Text GLabel 10350 1050 0    50   Output ~ 0
-3V3
 Wire Wire Line
 	10350 1050 10450 1050
 Wire Wire Line
@@ -720,9 +718,6 @@ ESP_EN
 Wire Wire Line
 	7550 1450 7450 1450
 Connection ~ 7550 1450
-Connection ~ 9600 1150
-Wire Wire Line
-	9600 1150 10450 1150
 Wire Wire Line
 	9600 1450 10350 1450
 Connection ~ 10350 1450
@@ -1173,4 +1168,19 @@ F 3 "~" H 2650 1600 50  0001 C CNN
 $EndComp
 Text GLabel 8600 5050 2    50   Input ~ 0
 V_BAT
+Text GLabel 10350 1050 0    50   Output ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5CBD5292
+P 10300 1150
+F 0 "#PWR?" H 10300 900 50  0001 C CNN
+F 1 "GND" H 10300 1000 50  0001 C CNN
+F 2 "" H 10300 1150 50  0001 C CNN
+F 3 "~" H 10300 1150 50  0001 C CNN
+	1    10300 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 1150 10300 1150
 $EndSCHEMATC
