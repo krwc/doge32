@@ -45,8 +45,6 @@ $EndComp
 Wire Wire Line
 	1600 2700 1600 2600
 Connection ~ 1600 2600
-Text GLabel 2550 1600 2    50   Output ~ 0
-3V3_USB
 $Comp
 L Device:R_Small R3
 U 1 1 5CB57715
@@ -379,10 +377,6 @@ Wire Wire Line
 	4050 5650 4250 5650
 Text GLabel 5150 2700 2    50   Output ~ 0
 V_BAT
-Text GLabel 8600 5050 2    50   Input ~ 0
-V_BAT
-Text GLabel 8600 5150 2    50   Input ~ 0
-3V3_USB
 Wire Wire Line
 	8500 5050 8600 5050
 Wire Wire Line
@@ -1153,4 +1147,30 @@ Wire Wire Line
 	3850 2750 3850 3050
 Text Notes 5650 1400 0    50   ~ 0
 Voltage regulator
+$Comp
+L power:GND #PWR04
+U 1 1 5CBBF6FB
+P 2850 1600
+F 0 "#PWR04" H 2850 1350 50  0001 C CNN
+F 1 "GND" H 2850 1450 50  0001 C CNN
+F 2 "" H 2850 1600 50  0001 C CNN
+F 3 "~" H 2850 1600 50  0001 C CNN
+	1    2850 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 1600 2750 1600
+$Comp
+L Device:R_Small R14
+U 1 1 5CBBE8F2
+P 2650 1600
+F 0 "R14" V 2450 1675 50  0000 R CNN
+F 1 "2.2k" V 2550 1675 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2580 1600 50  0001 C CNN
+F 3 "~" H 2650 1600 50  0001 C CNN
+	1    2650 1600
+	0    -1   1    0   
+$EndComp
+Text GLabel 8600 5050 2    50   Input ~ 0
+V_BAT
 $EndSCHEMATC
