@@ -403,9 +403,6 @@ Connection ~ 9250 3550
 Wire Wire Line
 	9350 3850 9350 3650
 Connection ~ 9350 3650
-Wire Wire Line
-	9450 3850 9450 3750
-Connection ~ 9450 3750
 Text GLabel 7550 1750 0    50   Input ~ 0
 ESP_SENSOR_VN
 Text GLabel 7550 1650 0    50   Input ~ 0
@@ -449,8 +446,6 @@ Wire Wire Line
 	9250 3550 10450 3550
 Wire Wire Line
 	9350 3650 10450 3650
-Wire Wire Line
-	9450 3750 10450 3750
 $Comp
 L power:GND #PWR0107
 U 1 1 5D20D1E7
@@ -776,8 +771,6 @@ Wire Wire Line
 Connection ~ 9750 5950
 Wire Wire Line
 	9750 5950 10050 5950
-Text GLabel 7800 5050 0    50   Output ~ 0
-ESP_I35
 Text GLabel 7800 5150 0    50   Output ~ 0
 ESP_I34
 Text GLabel 7800 5250 0    50   Input ~ 0
@@ -800,8 +793,6 @@ Wire Wire Line
 	7900 5450 7800 5450
 Wire Wire Line
 	7800 5550 7900 5550
-Text GLabel 9450 3850 3    50   Input ~ 0
-ESP_I35
 Text GLabel 9350 3850 3    50   Input ~ 0
 ESP_I34
 Text GLabel 9250 3850 3    50   Output ~ 0
@@ -1142,8 +1133,6 @@ F 3 "~" H 2650 1600 50  0001 C CNN
 	1    2650 1600
 	0    -1   1    0   
 $EndComp
-Text GLabel 8600 5050 2    50   Input ~ 0
-V_BAT
 Text GLabel 10350 1050 0    50   Output ~ 0
 3V3
 $Comp
@@ -1187,4 +1176,6 @@ F 3 "~" H 10350 1650 50  0001 C CNN
 	1    10350 1650
 	0    1    1    0   
 $EndComp
+Text GLabel 9450 3750 2    50   Input ~ 0
+V_BAT
 $EndSCHEMATC
