@@ -1007,8 +1007,6 @@ F 3 "https://www.taiwansemi.com/products/datasheet/TSM2323_F15.pdf" H 4200 2100 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 1800 4850 1800
-Wire Wire Line
 	4300 1700 4850 1700
 Wire Notes Line
 	3500 1200 3500 2950
@@ -1080,8 +1078,6 @@ Wire Wire Line
 	3900 2100 4000 2100
 Wire Wire Line
 	3900 1700 3900 2100
-Wire Wire Line
-	3900 2100 3900 2500
 Connection ~ 3900 2100
 $Comp
 L power:GND #PWR01
@@ -1115,10 +1111,10 @@ Wire Wire Line
 Connection ~ 4600 2450
 Text GLabel 3850 1350 0    50   Input ~ 0
 5V_USB
-Text Label 4950 1700 2    50   ~ 0
+Text Label 4850 1350 2    50   ~ 0
 V_IN
 $Comp
-L Device:R R13
+L Device:R_Small R13
 U 1 1 5CC17E8D
 P 3900 2650
 F 0 "R13" H 3830 2604 50  0000 R CNN
@@ -1128,4 +1124,12 @@ F 3 "~" H 3900 2650 50  0001 C CNN
 	1    3900 2650
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	3900 2100 3900 2550
+Wire Wire Line
+	3900 2750 3900 2800
+Wire Wire Line
+	4950 1800 4850 1800
+Wire Wire Line
+	4850 1350 4850 1700
 $EndSCHEMATC
