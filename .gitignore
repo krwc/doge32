@@ -54,7 +54,7 @@ out/
 
 ### KiCad custom ###
 *-cache.lib
-fp-info-cache/
+fp-info-cache
 
 ### Vim ###
 # Swap
