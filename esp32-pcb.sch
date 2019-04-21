@@ -122,14 +122,14 @@ F 3 "~" H 10550 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x06 SW3
+L Switch:SW_DIP_x04 SW3
 U 1 1 5CBE0384
-P 8200 5350
-F 0 "SW3" H 8200 5000 50  0000 C CNN
-F 1 "SW_DIP_x04" H 8200 4900 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_6.7x16.8mm_W8.61mm_P2.54mm_LowProfile" H 8200 5350 50  0001 C CNN
-F 3 "" H 8200 5350 50  0001 C CNN
-	1    8200 5350
+P 8200 5450
+F 0 "SW3" H 8200 5100 50  0000 C CNN
+F 1 "SW_DIP_x04" H 8200 5000 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W8.61mm_P2.54mm_LowProfile" H 8200 5450 50  0001 C CNN
+F 3 "" H 8200 5450 50  0001 C CNN
+	1    8200 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -228,8 +228,6 @@ Wire Wire Line
 	7550 1450 7550 1150
 Text GLabel 4800 2050 2    50   Output ~ 0
 V_BAT
-Wire Wire Line
-	8500 5050 8600 5050
 Wire Wire Line
 	8850 3350 9050 3350
 Wire Wire Line
@@ -480,8 +478,6 @@ F 3 "~" H 9750 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 5150 8600 5150
-Wire Wire Line
 	8500 5550 8600 5550
 Wire Wire Line
 	8900 5550 9000 5550
@@ -534,10 +530,6 @@ Text GLabel 7800 5450 0    50   Input ~ 0
 ESP_IO27
 Text GLabel 7800 5550 0    50   Input ~ 0
 ESP_IO26
-Wire Wire Line
-	7800 5050 7900 5050
-Wire Wire Line
-	7900 5150 7800 5150
 Wire Wire Line
 	7800 5250 7900 5250
 Wire Wire Line
