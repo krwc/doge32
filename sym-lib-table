@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name tsm2323cx)(type Legacy)(uri ${KIPRJMOD}/library/tsm2323cx.lib)(options "")(descr ""))
+  (lib (name cp2102n-a01-gqfn24)(type Legacy)(uri ${KIPRJMOD}/library/cp2102n-a01-gqfn24.lib)(options "")(descr ""))
 )
