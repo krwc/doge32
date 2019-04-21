@@ -81,10 +81,10 @@ $EndComp
 Text GLabel 8250 1050 1    50   Input ~ 0
 3V3
 $Comp
-L power:GND #PWR013
+L power:GND #PWR014
 U 1 1 5CB8AFFE
 P 8250 4150
-F 0 "#PWR013" H 8250 3900 50  0001 C CNN
+F 0 "#PWR014" H 8250 3900 50  0001 C CNN
 F 1 "GND" H 8250 4000 50  0001 C CNN
 F 2 "" H 8250 4150 50  0001 C CNN
 F 3 "~" H 8250 4150 50  0001 C CNN
@@ -111,10 +111,10 @@ F 3 "~" H 10300 5250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R12
+L Device:R_Small R15
 U 1 1 5CBD466D
 P 10550 5750
-F 0 "R12" H 10700 5800 50  0000 R CNN
+F 0 "R15" H 10700 5800 50  0000 R CNN
 F 1 "1k" H 10700 5700 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10550 5750 50  0001 C CNN
 F 3 "~" H 10550 5750 50  0001 C CNN
@@ -144,10 +144,10 @@ F 3 "~" H 9800 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R11
+L Device:R_Small R14
 U 1 1 5CC2BD0A
 P 10050 5750
-F 0 "R11" H 10200 5800 50  0000 R CNN
+F 0 "R14" H 10200 5800 50  0000 R CNN
 F 1 "1k" H 10200 5700 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10050 5750 50  0001 C CNN
 F 3 "~" H 10050 5750 50  0001 C CNN
@@ -166,10 +166,10 @@ F 3 "~" H 9250 5450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R10
+L Device:R_Small R13
 U 1 1 5CC2CE34
 P 9500 5750
-F 0 "R10" H 9650 5800 50  0000 R CNN
+F 0 "R13" H 9650 5800 50  0000 R CNN
 F 1 "1k" H 9650 5700 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9500 5750 50  0001 C CNN
 F 3 "~" H 9500 5750 50  0001 C CNN
@@ -188,10 +188,10 @@ F 3 "~" H 8750 5550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R9
+L Device:R_Small R12
 U 1 1 5CC2E0A7
 P 9000 5750
-F 0 "R9" H 9150 5800 50  0000 R CNN
+F 0 "R12" H 9150 5800 50  0000 R CNN
 F 1 "1k" H 9150 5700 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9000 5750 50  0001 C CNN
 F 3 "~" H 9000 5750 50  0001 C CNN
@@ -288,10 +288,10 @@ Wire Wire Line
 Wire Wire Line
 	9250 3550 10450 3550
 $Comp
-L power:GND #PWR012
+L power:GND #PWR013
 U 1 1 5D20D1E7
 P 10000 3950
-F 0 "#PWR012" H 10000 3700 50  0001 C CNN
+F 0 "#PWR013" H 10000 3700 50  0001 C CNN
 F 1 "GND" H 10000 3800 50  0001 C CNN
 F 2 "" H 10000 3950 50  0001 C CNN
 F 3 "~" H 10000 3950 50  0001 C CNN
@@ -469,10 +469,10 @@ Wire Wire Line
 Wire Wire Line
 	8850 3250 8950 3250
 $Comp
-L power:GND #PWR014
+L power:GND #PWR015
 U 1 1 5CE715A5
 P 9750 6050
-F 0 "#PWR014" H 9750 5800 50  0001 C CNN
+F 0 "#PWR015" H 9750 5800 50  0001 C CNN
 F 1 "GND" H 9750 5900 50  0001 C CNN
 F 2 "" H 9750 6050 50  0001 C CNN
 F 3 "~" H 9750 6050 50  0001 C CNN
@@ -888,10 +888,10 @@ F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R13
+L Device:R_Small R16
 U 1 1 5CB57715
 P 2850 5950
-F 0 "R13" V 2950 6050 50  0000 C CNN
+F 0 "R16" V 2950 6050 50  0000 C CNN
 F 1 "4.7k" V 2950 5950 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 5950 50  0001 C CNN
 F 3 "~" H 2850 5950 50  0001 C CNN
@@ -913,8 +913,6 @@ Text GLabel 1750 4450 1    50   Input ~ 0
 Wire Wire Line
 	1750 4450 1750 4550
 NoConn ~ 2150 4550
-Text GLabel 1950 4450 1    50   Input ~ 0
-5V_USB
 Wire Wire Line
 	1950 4450 1950 4550
 Wire Wire Line
@@ -945,10 +943,10 @@ F 3 "~" H 3100 6150 50  0001 C CNN
 $EndComp
 NoConn ~ 2650 6050
 $Comp
-L power:GND #PWR016
+L power:GND #PWR017
 U 1 1 5CB80D9F
 P 2000 6700
-F 0 "#PWR016" H 2000 6450 50  0001 C CNN
+F 0 "#PWR017" H 2000 6450 50  0001 C CNN
 F 1 "GND" H 2000 6550 50  0001 C CNN
 F 2 "" H 2000 6700 50  0001 C CNN
 F 3 "~" H 2000 6700 50  0001 C CNN
@@ -956,10 +954,10 @@ F 3 "~" H 2000 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L power:GND #PWR016
 U 1 1 5CB80F98
 P 3750 6250
-F 0 "#PWR015" H 3750 6000 50  0001 C CNN
+F 0 "#PWR016" H 3750 6000 50  0001 C CNN
 F 1 "GND" H 3750 6100 50  0001 C CNN
 F 2 "" H 3750 6250 50  0001 C CNN
 F 3 "~" H 3750 6250 50  0001 C CNN
@@ -975,10 +973,10 @@ ESP_RX
 Text GLabel 3050 5450 2    50   Input ~ 0
 ESP_TX
 $Comp
-L Device:R_Small R8
+L Device:R_Small R10
 U 1 1 5CB8326F
 P 2850 5450
-F 0 "R8" V 2750 5550 50  0000 C CNN
+F 0 "R10" V 2750 5550 50  0000 C CNN
 F 1 "1k" V 2750 5450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 5450 50  0001 C CNN
 F 3 "~" H 2850 5450 50  0001 C CNN
@@ -986,10 +984,10 @@ F 3 "~" H 2850 5450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R7
+L Device:R_Small R9
 U 1 1 5CB83719
 P 2850 5350
-F 0 "R7" V 2950 5450 50  0000 C CNN
+F 0 "R9" V 2950 5450 50  0000 C CNN
 F 1 "1k" V 2950 5350 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 5350 50  0001 C CNN
 F 3 "~" H 2850 5350 50  0001 C CNN
@@ -1007,10 +1005,10 @@ Wire Wire Line
 Wire Wire Line
 	2650 5950 2750 5950
 $Comp
-L Device:R_Small R14
+L Device:R_Small R17
 U 1 1 5CC61570
 P 3550 6150
-F 0 "R14" V 3450 6050 50  0000 C CNN
+F 0 "R17" V 3450 6050 50  0000 C CNN
 F 1 "1k" V 3450 6250 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3550 6150 50  0001 C CNN
 F 3 "~" H 3550 6150 50  0001 C CNN
@@ -1052,68 +1050,58 @@ V_BAT_HALF
 Text Notes 1950 2500 0    50   ~ 0
 Battery measurement
 Wire Notes Line
-	550  2350 2800 2350
-Wire Notes Line
-	2800 3700 550  3700
-Wire Notes Line
-	2800 2350 2800 3700
-Wire Notes Line
 	550  3700 550  2350
 Text Notes 600  3300 0    50   ~ 0
 Driven high if battery\nmeasurement is to be\nperformed, low otherwise.
-Wire Wire Line
-	1350 3000 1500 3000
 Text GLabel 1350 3000 0    50   Input ~ 0
 V_BAT_MEASURE
-Wire Wire Line
-	1350 2500 1800 2500
-Text GLabel 2250 3200 2    50   Output ~ 0
+Text GLabel 2500 3200 2    50   Output ~ 0
 V_BAT_HALF
 Wire Wire Line
-	1800 3200 2250 3200
+	2050 3200 2500 3200
 Wire Wire Line
-	1800 3450 1800 3550
+	2050 3450 2050 3550
 Wire Wire Line
-	1800 3250 1800 3200
+	2050 3250 2050 3200
 $Comp
-L power:GND #PWR011
+L power:GND #PWR012
 U 1 1 5CCCDE9C
-P 1800 3550
-F 0 "#PWR011" H 1800 3300 50  0001 C CNN
-F 1 "GND" H 1800 3400 50  0001 C CNN
-F 2 "" H 1800 3550 50  0001 C CNN
-F 3 "~" H 1800 3550 50  0001 C CNN
-	1    1800 3550
+P 2050 3550
+F 0 "#PWR012" H 2050 3300 50  0001 C CNN
+F 1 "GND" H 2050 3400 50  0001 C CNN
+F 2 "" H 2050 3550 50  0001 C CNN
+F 3 "~" H 2050 3550 50  0001 C CNN
+	1    2050 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 2500 1800 2600
+	2050 2500 2050 2600
 Text GLabel 1350 2500 0    50   Input ~ 0
 V_BAT
-Text Notes 1850 3400 0    50   ~ 0
+Text Notes 2100 3400 0    50   ~ 0
 1%
-Text Notes 1850 2750 0    50   ~ 0
+Text Notes 2100 2750 0    50   ~ 0
 1%
 $Comp
 L Device:R_Small R5
 U 1 1 5CCAE7B0
-P 1800 2700
-F 0 "R5" H 1730 2654 50  0000 R CNN
-F 1 "10k" H 1730 2745 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1730 2700 50  0001 C CNN
-F 3 "~" H 1800 2700 50  0001 C CNN
-	1    1800 2700
+P 2050 2700
+F 0 "R5" H 1980 2654 50  0000 R CNN
+F 1 "10k" H 1980 2745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 2700 50  0001 C CNN
+F 3 "~" H 2050 2700 50  0001 C CNN
+	1    2050 2700
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R6
+L Device:R_Small R7
 U 1 1 5CCAEC6F
-P 1800 3350
-F 0 "R6" H 1730 3304 50  0000 R CNN
-F 1 "10k" H 1730 3395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1730 3350 50  0001 C CNN
-F 3 "~" H 1800 3350 50  0001 C CNN
-	1    1800 3350
+P 2050 3350
+F 0 "R7" H 1980 3304 50  0000 R CNN
+F 1 "10k" H 1980 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 3350 50  0001 C CNN
+F 3 "~" H 2050 3350 50  0001 C CNN
+	1    2050 3350
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -1121,26 +1109,26 @@ Wire Wire Line
 $Comp
 L Transistor_FET:BSS138 Q2
 U 1 1 5CDA4B37
-P 1700 3000
-F 0 "Q2" H 1906 3046 50  0000 L CNN
-F 1 "BSS138Q-7-F" H 1906 2955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 2925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1700 3000 50  0001 L CNN
-	1    1700 3000
+P 1950 3000
+F 0 "Q2" H 2156 3046 50  0000 L CNN
+F 1 "BSS138Q-7-F" H 2156 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 2925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1950 3000 50  0001 L CNN
+	1    1950 3000
 	1    0    0    -1  
 $EndComp
-Connection ~ 1800 3200
+Connection ~ 2050 3200
 Connection ~ 9150 3450
 Wire Wire Line
 	9150 3450 10450 3450
-Text GLabel 4300 5300 2    50   Output ~ 0
+Text GLabel 4700 5300 2    50   Output ~ 0
 ESP_IO0
 Wire Wire Line
-	3900 4600 4000 4600
-Text GLabel 4000 4600 2    50   Output ~ 0
+	4000 4600 4100 4600
+Text GLabel 4100 4600 2    50   Output ~ 0
 ESP_EN
 Wire Wire Line
-	3900 4600 3900 4850
+	4000 4600 4000 4850
 Wire Notes Line
 	5100 7050 5100 3850
 $Comp
@@ -1155,43 +1143,108 @@ F 3 "https://www.taiwansemi.com/products/datasheet/TSM2323_F15.pdf" H 4200 1600 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 5050 3600 5050
+	4600 5850 4600 5950
+Wire Wire Line
+	4600 5450 4600 5300
+Wire Wire Line
+	4600 5300 4700 5300
+Text GLabel 1950 4450 1    50   Input ~ 0
+5V_USB
 $Comp
-L Transistor_FET:BSS138 Q3
-U 1 1 5CE884E4
-P 3800 5050
-F 0 "Q3" H 4006 5096 50  0000 L CNN
-F 1 "BSS138Q-7-F" H 4006 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 4975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3800 5050 50  0001 L CNN
-	1    3800 5050
+L Transistor_BJT:MMBT3904 Q4
+U 1 1 5CBED659
+P 4500 5650
+F 0 "Q4" H 4691 5696 50  0000 L CNN
+F 1 "MMBT3904" H 4691 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 5575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4500 5650 50  0001 L CNN
+	1    4500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q3
+U 1 1 5CBEE778
+P 3900 5050
+F 0 "Q3" H 4091 5096 50  0000 L CNN
+F 1 "MMBT3904" H 4091 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4100 4975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3900 5050 50  0001 L CNN
+	1    3900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 5CBF0729
+P 4200 5650
+F 0 "R11" V 4000 5650 50  0000 R CNN
+F 1 "10k" V 4100 5700 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 5650 50  0001 C CNN
+F 3 "~" H 4200 5650 50  0001 C CNN
+	1    4200 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5CBF113C
+P 3600 5050
+F 0 "R8" V 3400 5050 50  0000 R CNN
+F 1 "10k" V 3500 5100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3600 5050 50  0001 C CNN
+F 3 "~" H 3600 5050 50  0001 C CNN
+	1    3600 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 5250 4000 5650
+Wire Wire Line
+	4000 5650 4100 5650
+Wire Wire Line
+	4000 5650 2650 5650
+Connection ~ 4000 5650
+Wire Wire Line
+	3500 5050 3400 5050
+Connection ~ 3400 5050
+Wire Wire Line
+	3400 5050 2650 5050
+Wire Wire Line
+	3400 5950 4600 5950
+Wire Wire Line
+	3400 5050 3400 5950
+Wire Wire Line
+	1350 2500 2050 2500
+Wire Wire Line
+	1350 3000 1750 3000
+$Comp
+L Device:R_Small R6
+U 1 1 5CCA4E28
+P 1750 3350
+F 0 "R6" H 1680 3304 50  0000 R CNN
+F 1 "10k" H 1680 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 3350 50  0001 C CNN
+F 3 "~" H 1750 3350 50  0001 C CNN
+	1    1750 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1750 3000 1750 3250
+Connection ~ 1750 3000
+$Comp
+L power:GND #PWR011
+U 1 1 5CCB07D2
+P 1750 3550
+F 0 "#PWR011" H 1750 3300 50  0001 C CNN
+F 1 "GND" H 1750 3400 50  0001 C CNN
+F 2 "" H 1750 3550 50  0001 C CNN
+F 3 "~" H 1750 3550 50  0001 C CNN
+	1    1750 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 5650 3900 5650
-$Comp
-L Transistor_FET:BSS138 Q4
-U 1 1 5CE9597E
-P 4100 5650
-F 0 "Q4" H 4306 5696 50  0000 L CNN
-F 1 "BSS138Q-7-F" H 4306 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4300 5575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4100 5650 50  0001 L CNN
-	1    4100 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 5250 3900 5650
-Connection ~ 3900 5650
-Wire Wire Line
-	4200 5850 4200 5950
-Wire Wire Line
-	4200 5950 3600 5950
-Wire Wire Line
-	3600 5950 3600 5050
-Connection ~ 3600 5050
-Wire Wire Line
-	4200 5450 4200 5300
-Wire Wire Line
-	4200 5300 4300 5300
+	1750 3450 1750 3550
+Wire Notes Line
+	550  2350 3100 2350
+Wire Notes Line
+	550  3700 3100 3700
+Wire Notes Line
+	3100 2350 3100 3700
 $EndSCHEMATC
