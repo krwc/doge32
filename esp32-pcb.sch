@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:esp32-pcb-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1011,8 +1010,6 @@ Wire Wire Line
 Connection ~ 1950 5500
 Text GLabel 5250 5050 2    50   Output ~ 0
 ESP_IO0
-Wire Wire Line
-	4500 4350 4550 4350
 Text GLabel 4600 4350 2    50   Output ~ 0
 ESP_EN
 Wire Wire Line
@@ -1284,7 +1281,6 @@ Text GLabel 10350 3950 0    50   BiDi ~ 0
 ESP_IO2
 Wire Wire Line
 	10350 3950 10450 3950
-Connection ~ 4550 4350
 Wire Wire Line
 	4550 4350 4600 4350
 Wire Wire Line
