@@ -92,7 +92,6 @@ F 3 "~" H 8250 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7650 2650
-NoConn ~ 7650 2750
 NoConn ~ 7650 2850
 NoConn ~ 7650 2950
 NoConn ~ 7650 3050
@@ -228,24 +227,6 @@ Wire Wire Line
 	7550 1450 7550 1150
 Text GLabel 4800 2050 2    50   Output ~ 0
 V_BAT
-Wire Wire Line
-	8850 3350 9050 3350
-Wire Wire Line
-	8850 3450 9150 3450
-Wire Wire Line
-	8850 3750 9450 3750
-Wire Wire Line
-	8950 3850 8950 3250
-Wire Wire Line
-	9050 3350 9050 3850
-Connection ~ 9050 3350
-Wire Wire Line
-	9150 3850 9150 3450
-Wire Wire Line
-	9250 3850 9250 3550
-Wire Wire Line
-	8850 3550 9250 3550
-Connection ~ 9250 3550
 Text GLabel 7550 1750 0    50   Input ~ 0
 ESP_SENSOR_VN
 Text GLabel 7550 1650 0    50   Input ~ 0
@@ -253,13 +234,13 @@ ESP_SENSOR_VP
 $Comp
 L Connector:Conn_01x15_Male J2
 U 1 1 5D089334
-P 10650 3250
-F 0 "J2" V 10500 3250 50  0000 C CNN
-F 1 "Conn_01x15_Male" V 10600 3250 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10650 3250 50  0001 C CNN
-F 3 "~" H 10650 3250 50  0001 C CNN
-	1    10650 3250
-	-1   0    0    1   
+P 10650 3350
+F 0 "J2" V 10500 3350 50  0000 C CNN
+F 1 "Conn_01x15_Male" V 10600 3350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10650 3350 50  0001 C CNN
+F 3 "~" H 10650 3350 50  0001 C CNN
+	1    10650 3350
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10350 1050 10450 1050
@@ -267,46 +248,9 @@ Wire Wire Line
 	10350 1250 10450 1250
 Wire Wire Line
 	10350 1350 10450 1350
-Wire Wire Line
-	8850 2550 10450 2550
-Wire Wire Line
-	8850 2650 10450 2650
-Wire Wire Line
-	8850 2750 10450 2750
-Wire Wire Line
-	8850 2850 10450 2850
-Wire Wire Line
-	8850 2950 10450 2950
-Wire Wire Line
-	8850 3050 10450 3050
-Wire Wire Line
-	8850 3150 10450 3150
-Wire Wire Line
-	9050 3350 10450 3350
-Wire Wire Line
-	9250 3550 10450 3550
-$Comp
-L power:GND #PWR013
-U 1 1 5D20D1E7
-P 10000 3950
-F 0 "#PWR013" H 10000 3700 50  0001 C CNN
-F 1 "GND" H 10000 3800 50  0001 C CNN
-F 2 "" H 10000 3950 50  0001 C CNN
-F 3 "~" H 10000 3950 50  0001 C CNN
-	1    10000 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 3850 10000 3950
-Text GLabel 10350 3950 0    50   Output ~ 0
-3V3
-Wire Wire Line
-	10450 3950 10350 3950
-Wire Wire Line
-	10000 3850 10450 3850
-Text GLabel 10350 1450 0    50   Output ~ 0
+Text GLabel 10350 1450 0    50   Input ~ 0
 ESP_SENSOR_VN
-Text GLabel 10350 1350 0    50   Output ~ 0
+Text GLabel 10350 1350 0    50   Input ~ 0
 ESP_SENSOR_VP
 $Comp
 L power:GND #PWR04
@@ -319,10 +263,10 @@ F 3 "~" H 9600 1550 50  0001 C CNN
 	1    9600 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 9050 1550 2    50   Output ~ 0
-ESP_TX
-Text GLabel 9050 1750 2    50   Input ~ 0
-ESP_RX
+Text GLabel 8950 1550 2    50   BiDi ~ 0
+ESP_TXD0
+Text GLabel 8950 1750 2    50   BiDi ~ 0
+ESP_RXD0
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5D29CBE0
@@ -382,12 +326,6 @@ F 3 "~" H 8600 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8250 1150 8500 1150
-Wire Wire Line
-	8700 1150 8950 1150
-Wire Wire Line
-	8950 1150 8950 1450
-Wire Wire Line
-	8950 1450 8850 1450
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D2DF3D8
@@ -400,44 +338,14 @@ F 3 "" H 9250 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 1150 9050 1150
-Wire Wire Line
 	7650 1650 7550 1650
 Wire Wire Line
 	6950 1150 7050 1150
-Connection ~ 8950 1150
 Wire Wire Line
 	9450 1150 9600 1150
 Connection ~ 7550 1150
-Text GLabel 9050 1450 2    50   Input ~ 0
+Text GLabel 8950 1450 2    50   BiDi ~ 0
 ESP_IO0
-Wire Wire Line
-	8950 1450 9050 1450
-Connection ~ 8950 1450
-Wire Wire Line
-	8850 1550 9050 1550
-Wire Wire Line
-	8850 1750 9050 1750
-Wire Wire Line
-	8850 1850 10450 1850
-Wire Wire Line
-	8850 1950 10450 1950
-Wire Wire Line
-	8850 2050 10450 2050
-Wire Wire Line
-	8850 2150 10450 2150
-Wire Wire Line
-	8850 2250 10450 2250
-Wire Wire Line
-	8850 2350 10450 2350
-Wire Wire Line
-	8850 2450 10450 2450
-Wire Wire Line
-	8850 1650 9500 1650
-Wire Wire Line
-	9500 1650 9500 1750
-Wire Wire Line
-	9500 1750 10450 1750
 Wire Wire Line
 	10450 1450 10350 1450
 Wire Wire Line
@@ -461,9 +369,6 @@ Wire Notes Line
 	10950 700  6700 700 
 Text Notes 6900 4350 0    50   ~ 0
 ESP32 + buttons
-Connection ~ 8950 3250
-Wire Wire Line
-	8950 3250 10450 3250
 Wire Wire Line
 	8850 3250 8950 3250
 $Comp
@@ -524,8 +429,6 @@ Wire Wire Line
 	9750 5950 10050 5950
 Text GLabel 7800 5250 0    50   Input ~ 0
 ESP_IO33
-Text GLabel 7800 5350 0    50   Input ~ 0
-ESP_IO32
 Text GLabel 7800 5450 0    50   Input ~ 0
 ESP_IO27
 Text GLabel 7800 5550 0    50   Input ~ 0
@@ -538,14 +441,6 @@ Wire Wire Line
 	7900 5450 7800 5450
 Wire Wire Line
 	7800 5550 7900 5550
-Text GLabel 9250 3850 3    50   Output ~ 0
-ESP_IO33
-Text GLabel 9150 3850 3    50   Output ~ 0
-ESP_IO32
-Text GLabel 9050 3850 3    50   Output ~ 0
-ESP_IO27
-Text GLabel 8950 3850 3    50   Output ~ 0
-ESP_IO26
 Wire Notes Line
 	6700 4550 10950 4550
 Wire Notes Line
@@ -562,48 +457,6 @@ Wire Notes Line
 	10950 4750 10950 6300
 Wire Notes Line
 	6700 700  6700 4550
-Text Label 10450 3150 2    50   ~ 0
-PIN2_9
-Text Label 10450 3050 2    50   ~ 0
-PIN2_10
-Text Label 10450 2950 2    50   ~ 0
-PIN2_11
-Text Label 10450 2850 2    50   ~ 0
-PIN2_12
-Text Label 10450 2750 2    50   ~ 0
-PIN2_13
-Text Label 10450 2650 2    50   ~ 0
-PIN2_14
-Text Label 10450 2550 2    50   ~ 0
-PIN2_15
-Text Label 10450 2450 2    50   ~ 0
-PIN1_15
-Text Label 10450 2350 2    50   ~ 0
-PIN1_14
-Text Label 10450 2250 2    50   ~ 0
-PIN1_13
-Text Label 10450 2150 2    50   ~ 0
-PIN1_12
-Text Label 10450 2050 2    50   ~ 0
-PIN1_11
-Text Label 10450 1950 2    50   ~ 0
-PIN1_10
-Text Label 10450 1850 2    50   ~ 0
-PIN1_9
-Text Label 10450 1750 2    50   ~ 0
-PIN1_8
-Text Label 10450 3250 2    50   ~ 0
-PIN2_8
-Text Label 10450 3350 2    50   ~ 0
-PIN2_7
-Text Label 10450 3450 2    50   ~ 0
-PIN2_6
-Text Label 10450 3550 2    50   ~ 0
-PIN2_5
-Text Label 10450 3650 2    50   ~ 0
-PIN2_4
-Text Label 10450 3750 2    50   ~ 0
-PIN2_3
 Wire Notes Line
 	7050 6300 7050 4750
 Connection ~ 6050 1050
@@ -830,16 +683,14 @@ Text GLabel 10350 1050 0    50   Output ~ 0
 $Comp
 L power:GND #PWR02
 U 1 1 5CBD5292
-P 10300 1150
-F 0 "#PWR02" H 10300 900 50  0001 C CNN
-F 1 "GND" H 10300 1000 50  0001 C CNN
-F 2 "" H 10300 1150 50  0001 C CNN
-F 3 "~" H 10300 1150 50  0001 C CNN
-	1    10300 1150
+P 10350 1150
+F 0 "#PWR02" H 10350 900 50  0001 C CNN
+F 1 "GND" H 10350 1000 50  0001 C CNN
+F 2 "" H 10350 1150 50  0001 C CNN
+F 3 "~" H 10350 1150 50  0001 C CNN
+	1    10350 1150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10450 1150 10300 1150
 $Comp
 L Connector:Conn_01x15_Male J1
 U 1 1 5D089E9B
@@ -853,27 +704,16 @@ F 3 "~" H 10650 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9600 1150 9600 1550
-Text GLabel 10350 1250 0    50   BiDi ~ 0
+Text GLabel 10350 1250 0    50   Input ~ 0
 ESP_EN
 Text GLabel 10350 1550 0    50   Input ~ 0
 ESP_I34
-$Comp
-L power:GND #PWR06
-U 1 1 5CBF6508
-P 10350 1650
-F 0 "#PWR06" H 10350 1400 50  0001 C CNN
-F 1 "GND" H 10350 1500 50  0001 C CNN
-F 2 "" H 10350 1650 50  0001 C CNN
-F 3 "~" H 10350 1650 50  0001 C CNN
-	1    10350 1650
-	0    1    1    0   
-$EndComp
 Text Notes 4650 4100 0    50   ~ 0
 USB-UART converter
 Wire Wire Line
 	4800 2050 4600 2050
 Connection ~ 4600 2050
-Text GLabel 9450 3750 2    50   Input ~ 0
+Text GLabel 8950 3750 2    50   Input ~ 0
 V_BAT_HALF
 Text Notes 1950 2500 0    50   ~ 0
 Battery measurement
@@ -932,8 +772,6 @@ F 3 "~" H 2050 3350 50  0001 C CNN
 	1    2050 3350
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	8850 3650 10450 3650
 $Comp
 L Transistor_FET:BSS138 Q2
 U 1 1 5CDA4B37
@@ -946,9 +784,6 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1950 3000 50  000
 	1    0    0    -1  
 $EndComp
 Connection ~ 2050 3200
-Connection ~ 9150 3450
-Wire Wire Line
-	9150 3450 10450 3450
 $Comp
 L tsm2323cx:TSM2323CX Q1
 U 1 1 5CBA9B71
@@ -1178,84 +1013,79 @@ NoConn ~ 3150 5300
 Wire Wire Line
 	1950 5600 1950 5500
 Connection ~ 1950 5500
-Text GLabel 5200 5050 2    50   Output ~ 0
+Text GLabel 5250 5050 2    50   Output ~ 0
 ESP_IO0
 Wire Wire Line
-	4500 4350 4600 4350
+	4500 4350 4550 4350
 Text GLabel 4600 4350 2    50   Output ~ 0
 ESP_EN
 Wire Wire Line
-	4500 4350 4500 4600
+	4550 4350 4550 4600
 Wire Wire Line
-	5100 5600 5100 5700
+	5150 5600 5150 5700
 Wire Wire Line
-	5100 5200 5100 5050
+	5150 5200 5150 5050
 Wire Wire Line
-	5100 5050 5200 5050
+	5150 5050 5250 5050
 $Comp
 L Transistor_BJT:MMBT3904 Q4
 U 1 1 5CF61180
-P 5000 5400
-F 0 "Q4" H 5191 5446 50  0000 L CNN
-F 1 "MMBT3904" H 5191 5355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 5325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5000 5400 50  0001 L CNN
-	1    5000 5400
+P 5050 5400
+F 0 "Q4" H 5241 5446 50  0000 L CNN
+F 1 "MMBT3904" H 5241 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 5325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5050 5400 50  0001 L CNN
+	1    5050 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:MMBT3904 Q3
 U 1 1 5CF61186
-P 4400 4800
-F 0 "Q3" H 4591 4846 50  0000 L CNN
-F 1 "MMBT3904" H 4591 4755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 4725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4400 4800 50  0001 L CNN
-	1    4400 4800
+P 4450 4800
+F 0 "Q3" H 4641 4846 50  0000 L CNN
+F 1 "MMBT3904" H 4641 4755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4650 4725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4450 4800 50  0001 L CNN
+	1    4450 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R12
 U 1 1 5CF6118C
-P 4700 5400
-F 0 "R12" V 4500 5400 50  0000 R CNN
-F 1 "10k" V 4600 5450 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 5400 50  0001 C CNN
-F 3 "~" H 4700 5400 50  0001 C CNN
-	1    4700 5400
+P 4750 5400
+F 0 "R12" V 4550 5400 50  0000 R CNN
+F 1 "10k" V 4650 5450 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 5400 50  0001 C CNN
+F 3 "~" H 4750 5400 50  0001 C CNN
+	1    4750 5400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R9
 U 1 1 5CF61192
-P 4100 4800
-F 0 "R9" V 3900 4800 50  0000 R CNN
-F 1 "10k" V 4000 4850 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 4800 50  0001 C CNN
-F 3 "~" H 4100 4800 50  0001 C CNN
-	1    4100 4800
+P 4150 4800
+F 0 "R9" V 3950 4800 50  0000 R CNN
+F 1 "10k" V 4050 4850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 4800 50  0001 C CNN
+F 3 "~" H 4150 4800 50  0001 C CNN
+	1    4150 4800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4500 5000 4500 5400
+	4550 5000 4550 5400
 Wire Wire Line
-	4500 5400 4600 5400
+	4550 5400 4650 5400
+Connection ~ 4550 5400
 Wire Wire Line
-	4500 5400 3150 5400
-Connection ~ 4500 5400
+	4050 4800 3950 4800
 Wire Wire Line
-	4000 4800 3900 4800
-Connection ~ 3900 4800
+	3950 5700 5150 5700
 Wire Wire Line
-	3900 4800 3150 4800
-Wire Wire Line
-	3900 5700 5100 5700
-Wire Wire Line
-	3900 4800 3900 5700
+	3950 4800 3950 5700
 Text GLabel 3500 5050 2    50   Output ~ 0
-ESP_RX
+ESP_RXD0
 Text GLabel 3500 5150 2    50   Input ~ 0
-ESP_TX
+ESP_TXD0
 $Comp
 L Device:R_Small R11
 U 1 1 5CFA118C
@@ -1295,4 +1125,225 @@ Wire Notes Line
 	5650 6450 5650 3850
 Wire Notes Line
 	550  3850 5650 3850
+Text GLabel 8950 3250 2    50   BiDi ~ 0
+ESP_IO26
+Text GLabel 8950 3350 2    50   BiDi ~ 0
+ESP_IO27
+Text GLabel 8950 3550 2    50   BiDi ~ 0
+ESP_IO33
+Wire Wire Line
+	8950 3350 8850 3350
+Wire Wire Line
+	8950 3450 8850 3450
+Wire Wire Line
+	8850 3550 8950 3550
+Text GLabel 10350 1850 0    50   BiDi ~ 0
+ESP_IO26
+Text GLabel 10350 1950 0    50   BiDi ~ 0
+ESP_IO27
+Text GLabel 10350 1650 0    50   BiDi ~ 0
+ESP_IO33
+Text GLabel 8950 3650 2    50   Input ~ 0
+ESP_I34
+Wire Wire Line
+	8950 3650 8850 3650
+Wire Wire Line
+	8950 3750 8850 3750
+Text GLabel 8950 3450 2    50   Output ~ 0
+V_BAT_MEASURE
+Text GLabel 8950 3150 2    50   BiDi ~ 0
+ESP_IO25
+Text GLabel 10350 1750 0    50   BiDi ~ 0
+ESP_IO25
+Wire Wire Line
+	10350 1750 10450 1750
+Wire Wire Line
+	10450 1850 10350 1850
+Wire Wire Line
+	10450 1950 10350 1950
+Text GLabel 8950 2250 2    50   BiDi ~ 0
+ESP_IO14
+Wire Wire Line
+	8850 2250 8950 2250
+Text GLabel 10350 2050 0    50   BiDi ~ 0
+ESP_IO14
+Wire Wire Line
+	10450 2050 10350 2050
+Text GLabel 8950 2050 2    50   BiDi ~ 0
+ESP_IO12
+Text GLabel 10350 2150 0    50   BiDi ~ 0
+ESP_IO12
+Wire Wire Line
+	8950 2050 8850 2050
+Wire Wire Line
+	10350 2150 10450 2150
+Text GLabel 8950 2150 2    50   BiDi ~ 0
+ESP_IO13
+Text GLabel 10350 2250 0    50   BiDi ~ 0
+ESP_IO13
+Wire Wire Line
+	10450 2250 10350 2250
+Wire Wire Line
+	8950 2150 8850 2150
+NoConn ~ 7650 2750
+Text GLabel 8950 2350 2    50   BiDi ~ 0
+ESP_IO15
+Text GLabel 10350 4050 0    50   BiDi ~ 0
+ESP_IO15
+Wire Wire Line
+	8950 2350 8850 2350
+Text GLabel 8950 3050 2    50   BiDi ~ 0
+ESP_IO23
+Wire Wire Line
+	8950 3150 8850 3150
+Wire Wire Line
+	8850 3050 8950 3050
+Text GLabel 10350 2750 0    50   BiDi ~ 0
+ESP_IO23
+Wire Wire Line
+	10350 2750 10450 2750
+Text GLabel 8950 2950 2    50   BiDi ~ 0
+ESP_IO22
+Wire Wire Line
+	8850 2950 8950 2950
+Text GLabel 10350 2850 0    50   BiDi ~ 0
+ESP_IO22
+Wire Wire Line
+	10450 2850 10350 2850
+Text GLabel 10350 2950 0    50   BiDi ~ 0
+ESP_TXD0
+Wire Wire Line
+	10450 2950 10350 2950
+Text GLabel 10350 3050 0    50   BiDi ~ 0
+ESP_RXD0
+Wire Wire Line
+	10350 3050 10450 3050
+Text GLabel 8950 2850 2    50   BiDi ~ 0
+ESP_IO21
+Wire Wire Line
+	8850 2850 8950 2850
+Text GLabel 10350 3150 0    50   BiDi ~ 0
+ESP_IO21
+Wire Wire Line
+	10350 3150 10450 3150
+Text GLabel 8950 2750 2    50   BiDi ~ 0
+ESP_IO19
+Wire Wire Line
+	8850 2750 8950 2750
+Text GLabel 10350 3250 0    50   BiDi ~ 0
+ESP_IO19
+Wire Wire Line
+	10350 3250 10450 3250
+Text GLabel 8950 2650 2    50   BiDi ~ 0
+ESP_IO18
+Wire Wire Line
+	8950 2650 8850 2650
+Text GLabel 10350 3350 0    50   BiDi ~ 0
+ESP_IO18
+Wire Wire Line
+	10350 3350 10450 3350
+Text GLabel 8950 1950 2    50   BiDi ~ 0
+ESP_IO5
+Wire Wire Line
+	8850 1950 8950 1950
+Wire Wire Line
+	10350 3450 10450 3450
+Text GLabel 8950 2550 2    50   BiDi ~ 0
+ESP_IO17
+Wire Wire Line
+	8850 2550 8950 2550
+Text GLabel 10350 3450 0    50   BiDi ~ 0
+ESP_IO5
+Text GLabel 10350 3550 0    50   BiDi ~ 0
+ESP_IO17
+Wire Wire Line
+	10350 3550 10450 3550
+Text GLabel 8950 2450 2    50   BiDi ~ 0
+ESP_IO16
+Wire Wire Line
+	8850 2450 8950 2450
+Text GLabel 10350 3650 0    50   BiDi ~ 0
+ESP_IO16
+Wire Wire Line
+	10350 3650 10450 3650
+Text GLabel 8950 1850 2    50   BiDi ~ 0
+ESP_IO4
+Wire Wire Line
+	8850 1850 8950 1850
+Text GLabel 10350 3750 0    50   BiDi ~ 0
+ESP_IO4
+Wire Wire Line
+	10350 3750 10450 3750
+Text GLabel 10350 3850 0    50   BiDi ~ 0
+ESP_IO0
+Wire Wire Line
+	10350 3850 10450 3850
+Wire Wire Line
+	10350 4050 10450 4050
+Text GLabel 8950 1650 2    50   BiDi ~ 0
+ESP_IO2
+Wire Wire Line
+	8950 1650 8850 1650
+Text GLabel 10350 3950 0    50   BiDi ~ 0
+ESP_IO2
+Wire Wire Line
+	10350 3950 10450 3950
+Connection ~ 4550 4350
+Wire Wire Line
+	4550 4350 4600 4350
+Wire Wire Line
+	3150 5400 4550 5400
+Wire Wire Line
+	3150 4800 3950 4800
+Connection ~ 3950 4800
+Wire Wire Line
+	8850 1750 8950 1750
+Wire Wire Line
+	8850 1550 8950 1550
+Wire Wire Line
+	8700 1150 8900 1150
+Wire Wire Line
+	8950 1450 8900 1450
+Wire Wire Line
+	8900 1450 8900 1150
+Connection ~ 8900 1450
+Wire Wire Line
+	8900 1450 8850 1450
+Connection ~ 8900 1150
+Wire Wire Line
+	8900 1150 9050 1150
+Text GLabel 7800 5350 0    50   Input ~ 0
+ESP_IO14
+Text GLabel 10300 2350 0    50   Output ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5D287476
+P 10350 2450
+F 0 "#PWR?" H 10350 2200 50  0001 C CNN
+F 1 "GND" H 10350 2300 50  0001 C CNN
+F 2 "" H 10350 2450 50  0001 C CNN
+F 3 "~" H 10350 2450 50  0001 C CNN
+	1    10350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D287ABC
+P 10350 2650
+F 0 "#PWR?" H 10350 2400 50  0001 C CNN
+F 1 "GND" H 10350 2500 50  0001 C CNN
+F 2 "" H 10350 2650 50  0001 C CNN
+F 3 "~" H 10350 2650 50  0001 C CNN
+	1    10350 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 2350 10450 2350
+Wire Wire Line
+	10350 2450 10450 2450
+Wire Wire Line
+	10450 2650 10350 2650
+Wire Wire Line
+	10350 1150 10450 1150
 $EndSCHEMATC
