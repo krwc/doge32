@@ -6,4 +6,8 @@ K USB UART bridge
 F https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf
 $ENDCMP
 #
+$CMP SI2333DDS-T1-GE3
+F http://www.vishay.com/docs/63861/si2333dds.pdf
+$ENDCMP
+#
 #End Doc Library
