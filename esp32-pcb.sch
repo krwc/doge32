@@ -1369,17 +1369,6 @@ F 3 "~" H 10050 5750 50  0001 C CNN
 	1    10050 5750
 	1    0    0    -1  
 $EndComp
-$Comp
-L esp32-pcb:SI2333DDS-T1-GE3 Q1
-U 1 1 5CD10838
-P 4300 1600
-F 0 "Q1" H 4406 1646 50  0000 L CNN
-F 1 "SI2333DDS-T1-GE3" H 4406 1555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 1400 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/63861/si2333dds.pdf" H 4300 1600 50  0001 C CNN
-	1    4300 1600
-	1    0    0    -1  
-$EndComp
 Text Notes 4350 2950 0    50   ~ 0
 Slow rising reset ESP32 bugfix
 Wire Notes Line
@@ -1413,5 +1402,16 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3250 50  
 F 3 "~" H 4950 3250 50  0001 C CNN
 	1    4950 3250
 	1    0    0    -1  
+$EndComp
+$Comp
+L esp32-pcb:SI2333DDS-T1-GE3 Q1
+U 1 1 5CD10838
+P 4300 1600
+F 0 "Q1" H 4400 1700 50  0000 L CNN
+F 1 "SI2333DDS-T1-GE3" H 4400 1600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 1400 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/63861/si2333dds.pdf" H 4300 1600 50  0001 C CNN
+	1    4300 1600
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
