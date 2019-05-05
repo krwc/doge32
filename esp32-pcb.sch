@@ -1380,4 +1380,38 @@ F 3 "http://www.vishay.com/docs/63861/si2333dds.pdf" H 4300 1600 50  0001 C CNN
 	1    4300 1600
 	1    0    0    -1  
 $EndComp
+Text Notes 4350 2950 0    50   ~ 0
+Slow rising reset ESP32 bugfix
+Wire Notes Line
+	4200 2800 5650 2800
+Wire Notes Line
+	4200 3550 4200 2800
+Wire Notes Line
+	5650 3550 4200 3550
+Wire Notes Line
+	5650 2800 5650 3550
+Text GLabel 4950 3150 0    50   Input ~ 0
+ESP_EN
+$Comp
+L power:GND #PWR013
+U 1 1 5CCF8439
+P 4950 3350
+F 0 "#PWR013" H 4950 3100 50  0001 C CNN
+F 1 "GND" H 4950 3200 50  0001 C CNN
+F 2 "" H 4950 3350 50  0001 C CNN
+F 3 "~" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5CCF9481
+P 4950 3250
+F 0 "C8" H 5100 3300 50  0000 C CNN
+F 1 "4.7uF" H 5150 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3250 50  0001 C CNN
+F 3 "~" H 4950 3250 50  0001 C CNN
+	1    4950 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
