@@ -15,58 +15,56 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	1650 1750 1650 1850
+	1500 1900 1500 2000
 Wire Wire Line
-	1550 1750 1550 1850
+	1400 1900 1400 2000
 Wire Wire Line
-	1550 1850 1650 1850
+	1400 2000 1500 2000
 $Comp
 L power:GND #PWR07
 U 1 1 5CB5643D
-P 1650 1950
-F 0 "#PWR07" H 1650 1700 50  0001 C CNN
-F 1 "GND" H 1650 1800 50  0001 C CNN
-F 2 "" H 1650 1950 50  0001 C CNN
-F 3 "~" H 1650 1950 50  0001 C CNN
-	1    1650 1950
+P 1500 2100
+F 0 "#PWR07" H 1500 1850 50  0001 C CNN
+F 1 "GND" H 1500 1950 50  0001 C CNN
+F 2 "" H 1500 2100 50  0001 C CNN
+F 3 "~" H 1500 2100 50  0001 C CNN
+	1    1500 2100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 1950 1650 1850
-Connection ~ 1650 1850
-Text GLabel 2600 1350 2    50   BiDi ~ 0
+	1500 2100 1500 2000
+Connection ~ 1500 2000
+Text GLabel 2450 1500 2    50   BiDi ~ 0
 USB_D+
-Text GLabel 2600 1450 2    50   BiDi ~ 0
+Text GLabel 2450 1600 2    50   BiDi ~ 0
 USB_D-
 $Comp
 L Device:LED D1
 U 1 1 5CB766F2
-P 2350 850
-F 0 "D1" H 2350 1050 50  0000 C CNN
-F 1 "LED_USB_PWR" H 2350 950 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2350 850 50  0001 C CNN
-F 3 "~" H 2350 850 50  0001 C CNN
-	1    2350 850 
+P 2100 850
+F 0 "D1" H 2100 1050 50  0000 C CNN
+F 1 "LED_USB_PWR" H 2100 950 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2100 850 50  0001 C CNN
+F 3 "~" H 2100 850 50  0001 C CNN
+	1    2100 850 
 	-1   0    0    1   
 $EndComp
-Text GLabel 2600 1150 2    50   Output ~ 0
+Text GLabel 2450 1300 2    50   Output ~ 0
 5V_USB
-NoConn ~ 1950 1550
-Wire Wire Line
-	1950 1150 2050 1150
+NoConn ~ 1800 1700
 $Comp
 L Connector:USB_B_Micro USB1
 U 1 1 5CB51EBC
-P 1650 1350
-F 0 "USB1" H 1100 1450 50  0000 C CNN
-F 1 "MicroUSB type B" H 1100 1350 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1800 1300 50  0001 C CNN
-F 3 "~" H 1800 1300 50  0001 C CNN
-	1    1650 1350
+P 1500 1500
+F 0 "USB1" H 950 1600 50  0000 C CNN
+F 1 "MicroUSB type B" H 950 1500 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1650 1450 50  0001 C CNN
+F 3 "~" H 1650 1450 50  0001 C CNN
+	1    1500 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 850  2500 850 
+	2350 850  2250 850 
 $Comp
 L RF_Module:ESP32-WROOM-32 U2
 U 1 1 5CB874B7
@@ -191,16 +189,11 @@ Wire Wire Line
 Wire Wire Line
 	7550 1750 7650 1750
 Wire Wire Line
-	2200 850  2050 850 
+	1950 850  1800 850 
 Wire Wire Line
-	2050 850  2050 1150
+	1800 1500 2450 1500
 Wire Wire Line
-	2050 1150 2600 1150
-Connection ~ 2050 1150
-Wire Wire Line
-	1950 1350 2600 1350
-Wire Wire Line
-	1950 1450 2600 1450
+	1800 1600 2450 1600
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5CD2C470
@@ -347,11 +340,11 @@ Wire Wire Line
 	7550 1450 7450 1450
 Connection ~ 7550 1450
 Wire Notes Line
-	3300 550  3300 2200
+	3300 550  3300 2300
 Wire Notes Line
-	3300 2200 550  2200
+	3300 2300 550  2300
 Wire Notes Line
-	550  2200 550  550 
+	550  2300 550  550 
 Text Notes 700  750  0    50   ~ 0
 USB port
 Wire Notes Line
@@ -640,27 +633,14 @@ Wire Wire Line
 Text Notes 5700 750  0    50   ~ 0
 Voltage regulator
 $Comp
-L power:GND #PWR01
-U 1 1 5CBBF6FB
-P 2900 850
-F 0 "#PWR01" H 2900 600 50  0001 C CNN
-F 1 "GND" H 2900 700 50  0001 C CNN
-F 2 "" H 2900 850 50  0001 C CNN
-F 3 "~" H 2900 850 50  0001 C CNN
-	1    2900 850 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2900 850  2800 850 
-$Comp
 L Device:R_Small R1
 U 1 1 5CBBE8F2
-P 2700 850
-F 0 "R1" V 2500 900 50  0000 R CNN
-F 1 "2k" V 2600 900 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2630 850 50  0001 C CNN
-F 3 "~" H 2700 850 50  0001 C CNN
-	1    2700 850 
+P 2450 850
+F 0 "R1" V 2250 900 50  0000 R CNN
+F 1 "2k" V 2350 900 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 850 50  0001 C CNN
+F 3 "~" H 2450 850 50  0001 C CNN
+	1    2450 850 
 	0    -1   1    0   
 $EndComp
 Text GLabel 10350 1050 0    50   Output ~ 0
@@ -1414,4 +1394,41 @@ F 3 "http://www.vishay.com/docs/63861/si2333dds.pdf" H 4300 1600 50  0001 C CNN
 	1    4300 1600
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	1800 1300 2450 1300
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5CE46D1E
+P 2850 950
+F 0 "Q?" V 3175 900 50  0000 L CNN
+F 1 "BSS138Q-7-F" V 3075 600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3050 875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2850 950 50  0001 L CNN
+	1    2850 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 850  2650 850 
+Wire Wire Line
+	1800 850  1800 1300
+Connection ~ 1800 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5CECE2CE
+P 3050 850
+F 0 "#PWR?" H 3050 600 50  0001 C CNN
+F 1 "GND" H 3050 700 50  0001 C CNN
+F 2 "" H 3050 850 50  0001 C CNN
+F 3 "~" H 3050 850 50  0001 C CNN
+	1    3050 850 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7550 1000 1    50   UnSpc ~ 0
+EN
+Wire Wire Line
+	7550 1000 7550 1150
+Text GLabel 3000 1150 2    50   UnSpc ~ 0
+EN
+Wire Wire Line
+	3000 1150 2850 1150
 $EndSCHEMATC
