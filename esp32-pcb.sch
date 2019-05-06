@@ -508,10 +508,10 @@ $Comp
 L Device:D_Schottky D2
 U 1 1 5CC6E3F6
 P 4100 1050
-F 0 "D2" H 4100 926 50  0000 C CNN
-F 1 "D_Schottky" H 4100 925 50  0001 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4100 1050 50  0001 C CNN
-F 3 "~" H 4100 1050 50  0001 C CNN
+F 0 "D2" H 4100 1150 50  0000 C CNN
+F 1 "B140HW-7" H 4050 950 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4100 1050 50  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/115/ds30670-86720.pdf" H 4100 1050 50  0001 C CNN
 	1    4100 1050
 	-1   0    0    1   
 $EndComp
