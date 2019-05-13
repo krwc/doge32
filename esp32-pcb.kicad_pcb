@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 3060)
+    (drawings 3062)
     (tracks 624)
     (zones 0)
     (modules 51)
@@ -2525,6 +2525,12 @@
     )
   )
 
+  (gr_text - (at 150.14 121.92) (layer F.SilkS) (tstamp 5CDA0D07)
+    (effects (font (size 1.5 1.5) (thickness 0.16)))
+  )
+  (gr_text + (at 142.24 121.92) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.16)))
+  )
   (gr_text 33 (at 147.828 108.712) (layer F.SilkS)
     (effects (font (size 0.7 0.6) (thickness 0.15)))
   )
@@ -2540,7 +2546,7 @@
   (gr_text "To the moon!" (at 137.414 95.123) (layer B.SilkS)
     (effects (font (size 0.75 0.75) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "DOGE32 v1.0" (at 137.414 93.853) (layer B.SilkS) (tstamp 5CBE2F4B)
+  (gr_text "DOGE32 v2.0" (at 137.414 93.853) (layer B.SilkS) (tstamp 5CBE2F4B)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_line (start 137.41553 90.46364) (end 137.36132 90.50113) (layer B.SilkS) (width 0.1))
