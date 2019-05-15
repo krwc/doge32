@@ -441,53 +441,37 @@ Wire Notes Line
 	6700 700  6700 4550
 Wire Notes Line
 	7050 6300 7050 4750
-Connection ~ 6050 1050
+Connection ~ 6200 1050
 Wire Wire Line
-	6050 1050 6250 1050
+	6200 1050 6400 1050
 Wire Wire Line
-	6050 1550 6050 1650
+	6200 1550 6200 1650
 Wire Wire Line
-	5350 1050 5250 1050
+	6100 1050 6200 1050
 Wire Wire Line
-	5950 1050 6050 1050
-Wire Wire Line
-	6050 1200 6050 1050
-Wire Wire Line
-	5250 1050 5250 1150
-Connection ~ 5250 1050
+	6200 1200 6200 1050
 $Comp
 L Device:C_Small C2
 U 1 1 5CCEC143
-P 6050 1300
-F 0 "C2" H 5850 1250 50  0000 L CNN
-F 1 "10uF" H 5750 1350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6050 1300 50  0001 C CNN
-F 3 "~" H 6050 1300 50  0001 C CNN
-	1    6050 1300
+P 6200 1300
+F 0 "C2" H 6000 1250 50  0000 L CNN
+F 1 "10uF" H 5900 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6200 1300 50  0001 C CNN
+F 3 "~" H 6200 1300 50  0001 C CNN
+	1    6200 1300
 	-1   0    0    1   
 $EndComp
-Text GLabel 6250 1050 2    50   Output ~ 0
+Text GLabel 6400 1050 2    50   Output ~ 0
 3V3
 $Comp
 L power:GND #PWR05
 U 1 1 5CCCBA56
-P 6050 1650
-F 0 "#PWR05" H 6050 1400 50  0001 C CNN
-F 1 "GND" H 6050 1500 50  0001 C CNN
-F 2 "" H 6050 1650 50  0001 C CNN
-F 3 "~" H 6050 1650 50  0001 C CNN
-	1    6050 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:TLV75533PDBV U1
-U 1 1 5CC96B7D
-P 5650 1150
-F 0 "U1" H 5650 1492 50  0000 C CNN
-F 1 "TLV75533" H 5650 1401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5650 1475 50  0001 C CIN
-F 3 "http://datasheets.maximintegrated.com/en/ds/MAX603-MAX604.pdf" H 5650 1100 50  0001 C CNN
-	1    5650 1150
+P 6200 1650
+F 0 "#PWR05" H 6200 1400 50  0001 C CNN
+F 1 "GND" H 6200 1500 50  0001 C CNN
+F 2 "" H 6200 1650 50  0001 C CNN
+F 3 "~" H 6200 1650 50  0001 C CNN
+	1    6200 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -536,14 +520,8 @@ Wire Wire Line
 Text GLabel 3850 700  0    50   Input ~ 0
 5V_USB
 Wire Wire Line
-	5350 1150 5250 1150
-Wire Wire Line
-	5650 1550 6050 1550
-Wire Wire Line
-	5650 1450 5650 1550
-Wire Wire Line
-	6050 1550 6050 1400
-Connection ~ 6050 1550
+	6200 1550 6200 1400
+Connection ~ 6200 1550
 Wire Wire Line
 	4300 2050 4600 2050
 Wire Wire Line
@@ -572,35 +550,10 @@ F 3 "~" H 4600 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 2150 4600 2050
-Wire Wire Line
-	4950 1200 4950 1050
-Connection ~ 4950 1050
-Wire Wire Line
-	4950 1050 5250 1050
-Wire Wire Line
-	4950 1400 4950 1550
-Wire Wire Line
-	4950 1550 5650 1550
-Connection ~ 5650 1550
-$Comp
-L Device:C_Small C1
-U 1 1 5CD1AFC7
-P 4950 1300
-F 0 "C1" H 5100 1350 50  0000 C CNN
-F 1 "10uF" H 5150 1250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 1300 50  0001 C CNN
-F 3 "~" H 4950 1300 50  0001 C CNN
-	1    4950 1300
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	3450 550  6500 550 
 Wire Notes Line
 	3450 550  3450 2550
 Wire Notes Line
-	6500 550  6500 2550
-Wire Notes Line
-	3450 2550 6500 2550
+	6650 550  6650 2550
 Wire Wire Line
 	4250 1050 4300 1050
 Wire Wire Line
@@ -610,8 +563,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 1400 4300 1050
 Connection ~ 4300 1050
-Wire Wire Line
-	4300 1050 4950 1050
 Wire Wire Line
 	4000 1600 3900 1600
 $Comp
@@ -1431,4 +1382,53 @@ Text GLabel 3000 1150 2    50   UnSpc ~ 0
 EN
 Wire Wire Line
 	3000 1150 2850 1150
+$Comp
+L Regulator_Linear:XC6220B331MR U1
+U 1 1 5CDD2A70
+P 5600 1150
+F 0 "U1" H 5600 1517 50  0000 C CNN
+F 1 "XC6220B331MR" H 5600 1426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5600 1150 50  0001 C CNN
+F 3 "https://www.torexsemi.com/file/xc6220/XC6220.pdf" H 6350 150 50  0001 C CNN
+	1    5600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5CE05BC4
+P 4750 1400
+F 0 "#PWR0103" H 4750 1150 50  0001 C CNN
+F 1 "GND" H 4750 1250 50  0001 C CNN
+F 2 "" H 4750 1400 50  0001 C CNN
+F 3 "~" H 4750 1400 50  0001 C CNN
+	1    4750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5CD1AFC7
+P 4750 1300
+F 0 "C1" H 4900 1350 50  0000 C CNN
+F 1 "10uF" H 4950 1250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 1300 50  0001 C CNN
+F 3 "~" H 4750 1300 50  0001 C CNN
+	1    4750 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1050 4750 1050
+Wire Wire Line
+	4750 1200 4750 1050
+Wire Wire Line
+	5600 1550 6200 1550
+Wire Wire Line
+	5100 1250 5100 1050
+Wire Wire Line
+	4750 1050 5100 1050
+Connection ~ 4750 1050
+Connection ~ 5100 1050
+Wire Notes Line
+	3450 550  6650 550 
+Wire Notes Line
+	3450 2550 6650 2550
 $EndSCHEMATC
