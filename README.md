@@ -1,5 +1,10 @@
 # DOGE32 Features
 
+## Small footprint
+
+The board is 25mm x 59mm, which means it can fit into the standard breadboard nicely, and
+each pin will be accessible.
+
 ## Battery slot
 
 The board can be powered by 3.7V li-po battery.
