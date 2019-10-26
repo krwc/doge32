@@ -35,11 +35,11 @@ Our board also incorporates the fix for this problem.
 
 # Renders
 
-![Top](https://github.com/mkrawiec/esp32-pcb/blob/master/esp32-pcb-top.png)
+![Top](https://github.com/sznaider/doge32/blob/master/esp32-pcb-top.png)
 
-![Bottom](https://github.com/mkrawiec/esp32-pcb/blob/master/esp32-pcb-bottom.png)
+![Bottom](https://github.com/sznaider/doge32/blob/master/esp32-pcb-bottom.png)
 
 # Authors
 
-Me and @dextero. The board is an absolute overkill, built to monitor soil moisture and eventually
-to help reminiding about watering plants more often ;-).
+Me and [dextero](https://github.com/dextero/). The board is an absolute overkill, built to monitor
+soil moisture and eventually to help reminiding about watering plants more often ;-).
