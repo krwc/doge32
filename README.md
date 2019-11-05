@@ -22,7 +22,7 @@ if you're making some quick fixes to the "already deployed" device.
 ## Built-in voltage measurement on IO35 pin
 
 The IO35 pin of the ESP32 is connected to the (switchable via IO32), to avoid excessive current
-draw) input voltage divider, and can be used to determine the health of the battery.
+draw input voltage divider, and can be used to determine the battery level of the battery.
 
 ## Cutting off the USB-UART converter when powered on from the battery
 
